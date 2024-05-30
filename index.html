@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-6 relative">
+        <div id="button-name" class="absolute top-0 left-1/2 transform -translate-x-1/2 mt-2 text-gray-700 font-bold text-lg"></div>
+        <div id="calculator" class="grid grid-cols-4 gap-2 mt-6">
+            <div class="relative col-span-4">
+                <span id="copy-result" class="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer text-purple-600 font-bold text-3xl"><ion-icon name="clipboard-outline"></ion-icon></span>
+                <input id="display" type="text" class="w-full text-right p-4 text-2xl border rounded pl-8" disabled />
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

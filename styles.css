@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+      background-color: #333;
+  }
+  
+  /* Estilos para el nombre del botón */
+#button-name {
+      opacity: 0;
+      transition: opacity 0.5s;
+}
+  
+button.btn {
+      transition: background-color 0.3s;
+}
+  
+button.btn.C:hover {
+      background-color: #e3342f; /* Clase bg-red-600 en hover */
+}
+  
